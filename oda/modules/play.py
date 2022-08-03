@@ -322,8 +322,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url=f"t.me/{SUPPORT}"),
-                    InlineKeyboardButton("📡 Updates", url=f"t.me/{UPDATE}"),
+                    InlineKeyboardButton("🚨 Support", url=f"t.me/Rsupportprobot"),
+                    InlineKeyboardButton("📡 Updates", url=f"t.me/Akeno_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -360,8 +360,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🚨 Support", url=f"t.me/{SUPPORT}"),
-                        InlineKeyboardButton("📡 Updates", url=f"t.me/{UPDATE}"),
+                        InlineKeyboardButton("🚨 Support", url=f"t.me/Rsupportprobot"),
+                        InlineKeyboardButton("📡 Updates", url=f"t.me/Akeno_update"),
                     ],
                     [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
                 ]
@@ -453,7 +453,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @UserLazyXBot**"
+                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @Akeno_update**"
             )
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
@@ -489,8 +489,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url=f"t.me/{SUPPORT}"),
-                    InlineKeyboardButton("📡 Updates", url=f"t.me/{UPDATE}"),
+                    InlineKeyboardButton("🚨 Support", url=f"t.me/Rsupportprobot"),
+                    InlineKeyboardButton("📡 Updates", url=f"t.me/Akeno_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
