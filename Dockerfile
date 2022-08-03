@@ -1,6 +1,8 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs17
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install ffmpeg -y
+FROM rxymx/odamusic:newest
+
+RUN apt-get update -y && apt-get upgrade -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U pip
